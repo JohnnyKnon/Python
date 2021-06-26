@@ -182,11 +182,21 @@ print(a1)
 print(a2)
 print(a3)
 
-#반복문
+#반복문 loof
 
 # for, while
 
 #First For
-for i in range(3):
+#몇 번째 반복이 되는지 볼 수 있다. 0부터 시작함.
+for i in range(2):
+  print(i)
   print("철수: 안녕 영희야 뭐해?")
   print("영희: 안녕 철수야 그냥 있어.")
+
+i = 0
+
+while i < 3:
+  print(i)
+  print("철수: 안녕 영희야 뭐해?")
+  print("영희: 안녕 철수야 그냥 있어.")
+  i = i + 1 # i가 1씩 증가 즉 i = 0이였으니 1씩 증가해서 i값이 3이되기 전에 끝남으로 0~2 총 3번 루프 된다.
