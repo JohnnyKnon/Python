@@ -148,3 +148,16 @@ def name(msg):
     return 'im solo'
 
 print("반환된 값:" + name('min'))
+
+
+def other(text):
+  #Min 이기에 Daisuki 이다. h는 return된 값을 가지고 있으므로 print(h)는 daisuki가 된다.
+  if text == 'Min':
+    return 'daisuki'
+
+  else:
+    return 'im kanon'
+
+h = other("Min")
+
+print(h)
