@@ -62,4 +62,19 @@ if not 2 > 1:
   print("YES!!")
 else:
   print("NO!!")
-  
+
+# and 랑 or
+
+if 1 > 0 and 2 > 1:
+  print("둘다 참입니다.") # and 는 둘 중 하나라도 거짓이면 거짓
+
+if 1 > 0 and 1 > 4:
+  print("둘다 참 입니다.")
+else:
+  print("둘다 거짓이거나 둘중 하나가 거짓 입니다.")
+
+#BUT
+
+if 1 > 0 or 1 > 4:
+  print("둘다 참이거나 둘중 하나가 참 입니다.")
+# or 은 둘 중 하나라도 참이면 참 이다.
