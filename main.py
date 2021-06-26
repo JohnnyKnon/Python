@@ -226,6 +226,7 @@ for i in range(3):
   print('Hey Johnny its been a while How r u?')
   print("Great, How are you too Ewen?")
 
-  continue
+  if i == 1:
+    continue
   #컨티뉴 밑은 실행이 안되고 컨티뉴를 확인한 순간 다시 처음으로 돌아가 반복함.
   print("MIN! im Kanon")
