@@ -96,9 +96,38 @@ if g > 2:
 
 if g > 5:
   print("참 입니다.")
-#else 
+#else if 조건문 else if가 참 임으로 3 입니다. 송출 
 elif g == 3:
   print("3 입니다.")
 else:
   print("거짓 입니다.")
 
+#function
+
+#def functionName (Data를 받을 수 있는 공간)
+
+def chat(name1, name2):
+
+  print("%s 안녕? 넌 몇 살이니?" % name1)
+  print("%s 나? 나는 20" % name2)
+
+chat("민", "카논")
+
+#def test
+
+def calc(num1, num2):
+  if num1 > 3 and num2 == 1:
+    print("맞는 내용 입니다.")
+  else:
+    print("둘다 혹은 둘중 하나가 틀립니다.")
+  
+calc(2, 1)
+
+def talk(food1, num):
+
+  print("%s 한 개 주세요." % food1)
+  print("합해서" + str(num) + "원 입니다.")
+
+talk("치즈버거", 4500)
+
+# %s는 "%s content" % name 할 때 %s 에 name의 값을 넘겨주는 역할을 하는 것 같다.
