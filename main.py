@@ -195,8 +195,37 @@ for i in range(2):
 
 i = 0
 
-while i < 3:
+while i < 3: #while 이 주로 쓰이는 예시는 무한루프
   print(i)
   print("철수: 안녕 영희야 뭐해?")
   print("영희: 안녕 철수야 그냥 있어.")
   i = i + 1 # i가 1씩 증가 즉 i = 0이였으니 1씩 증가해서 i값이 3이되기 전에 끝남으로 0~2 총 3번 루프 된다.
+
+#break and continue
+i = 0
+
+while True: #while 이 주로 쓰이는 예시는 무한루프
+  print(i)
+  print("철수: 안녕 영희야 뭐해?")
+  print("영희: 안녕 철수야 그냥 있어.")
+  i = i + 1
+
+  if i > 2:
+    break
+
+for i in range(100):
+  print(i) # 0
+  print('Hey Johnny its been a while How r u?')
+  print("Great, How are you too Ewen?")
+  
+  if i > 2:
+    break
+  
+for i in range(3):
+  print(i) # 0
+  print('Hey Johnny its been a while How r u?')
+  print("Great, How are you too Ewen?")
+
+  continue
+  #컨티뉴 밑은 실행이 안되고 컨티뉴를 확인한 순간 다시 처음으로 돌아가 반복함.
+  print("MIN! im Kanon")
