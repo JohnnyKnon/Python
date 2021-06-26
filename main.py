@@ -1,3 +1,5 @@
+#공부 자료 테크보이 워니(youtuber)
+
 print("Hello World!")
 
 # First Time Variables
@@ -11,7 +13,7 @@ print(a - b)
 print(a * b)
 print(a / b)
 print(a ** b)
-print(a % b) # mod
+print(a % b) #나머지 값
 
 # 문자열 관련
 
@@ -36,7 +38,7 @@ print(b + int(d))
 # 불리안: boolean (True or False)
 
 e = True
-y = False
+f = False
 
 print(e)
 print(y)
@@ -86,3 +88,17 @@ if 1 > 0 or 1 > 4 and 2 > 0:
 else:
   print("해당 부분은 거짓 입니다.")
 # 테스트 결과: (1 > 0 or 1 > 4) or 임으로 참이다. 참 and 2 > 0 (참)이므로 결과도 참이다.
+
+g = 3
+
+if g > 2:
+  print("Hello")
+
+if g > 5:
+  print("참 입니다.")
+#else 
+elif g == 3:
+  print("3 입니다.")
+else:
+  print("거짓 입니다.")
+
