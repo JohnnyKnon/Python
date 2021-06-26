@@ -24,3 +24,7 @@ z= """
 """
 
 print (z)
+
+print("안녕" + "잘 지내니?")
+
+print (str(a) + y)
