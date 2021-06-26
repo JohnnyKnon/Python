@@ -131,3 +131,20 @@ def talk(food1, num):
 talk("치즈버거", 4500)
 
 # %s는 "%s content" % name 할 때 %s 에 name의 값을 넘겨주는 역할을 하는 것 같다.
+
+def desum(a, b):
+  result = a + b
+  return result
+
+d = desum(1, 2)
+print(d)
+
+def name(msg):
+
+  if msg == 'Kanon':
+    return 'daisuki'
+
+  else:
+    return 'im solo'
+
+print("반환된 값:" + name('min'))
