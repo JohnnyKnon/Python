@@ -32,3 +32,12 @@ print (str(a) + y)
 d = "3"
 
 print(b + int(d))
+
+# 불리안: boolean (True or False)
+
+e = True
+y = False
+
+print(e)
+print(y)
+
