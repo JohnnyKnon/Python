@@ -231,7 +231,6 @@ for i in range(3):
   #컨티뉴 밑은 실행이 안되고 컨티뉴를 확인한 순간 다시 처음으로 돌아가 반복함.
   print("MIN! im Kanon")
 
-  #리스트 듀플 딕셔너리
 
   #list
   j = [1,2,3,4]
@@ -268,15 +267,15 @@ for i in range(3):
   print(Z)
   
   for q in n:
-    print(q) # n안의 있는 리스트 값들이 차례대로 송출 *참고로 좌에서 우 순서로 정렬되는 것 이지 숫자 높은순 낮은순이 아니다.
+    print(q) # n안의 있는 리스트 값들이 차례대로 송출 *참고로 좌에서 우 순서로 하나씩 송출 이지 숫자 높은순 낮은순이 아니다.
 
   word = ["Hello", "Python"]
 
   for r in word:
     print(r)
 
-  #list 에서 한 엘리멘트가 어디에 위치하고있는지 확인
 
+  #list 에서 한 엘리멘트가 어디에 위치하고있는지 확인
   print(n.index(1)) # 0부터 시작함으로 012 즉 2번째 자리 위치 하다는것은 표시해줌
   print(word.index("Hello")) #word 리스트 엘리멘트인 Hello 값이 몇번째인지 송출 맨처음이니 0번째가 맞다.
 
@@ -288,3 +287,37 @@ for i in range(3):
     print("Hello 가 있습니다.") # "Hello"가 n리스트 안에 포함이 되있을 경우만 송출
   else:
     print("Hello가 존재하지 않습니다.") #"Hello"가 n리스트 안에 포함이 되어있지 않은 경우 송출
+
+#tuple 튜플
+
+t1 = tuple()
+t2 = (1, 2, 3)#tuple()하고 같음
+t3 = ('a', 'b', 'c')
+t4 = (1, "hello", "there")
+
+print(t2)
+print(t3)
+print(t4)
+
+print(t2 + t3) #튜플끼리 이으기
+print('a' in t3) # list와 마찬가지로 튜플 안에 a가 있는지 확인 True
+print(t2.index(1)) # t2에서 1이 몇번째에 위치하는지 확인 * 맨 처음 있음으로. 0번째
+
+#응용
+
+if 'hello' in t2 or 1 in t2 and 1 in t4:
+  #hello가 t2에 있거나 1이 t2 t4에 있어야 True
+  print("해당 조건문은 True 입니다.")
+else:
+  print("해당 내용은 False 입니다.")
+
+Tst1 = t2.index(3) # 0 1 2 값은 2 이다.
+
+if Tst1 >= 2 :
+  print("True")
+else:
+  print("False")
+
+#Tuple 과 List 의 차이점 Tuple cannot Assignment (Can't Updating)
+#Ex. list는 j[2] = 9 형식으로 j의 2번째 값을 9로 바꾸는 기능이 있으나 튜플은 존재하지 X
+# mutable(가변) vs immutable(불변) 엘리먼트의 값을 바꿀 수 있느냐 없느냐.
