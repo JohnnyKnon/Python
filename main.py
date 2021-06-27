@@ -231,6 +231,9 @@ for i in range(3):
   #컨티뉴 밑은 실행이 안되고 컨티뉴를 확인한 순간 다시 처음으로 돌아가 반복함.
   print("MIN! im Kanon")
 
+ #------------------------------------------------------------------------------
+
+  #list, Tuple, Dictionary
 
   #list
   j = [1,2,3,4]
@@ -258,7 +261,7 @@ for i in range(3):
 
   n = [3,4,1,2]
 
-  Y = sorted(n)#내용을 정렬 시켜줌
+  Y = sorted(n)#내용을 정렬 시켜줌 sorted
 
   print(Y)
 
@@ -276,7 +279,7 @@ for i in range(3):
 
 
   #list 에서 한 엘리멘트가 어디에 위치하고있는지 확인
-  print(n.index(1)) # 0부터 시작함으로 012 즉 2번째 자리 위치 하다는것은 표시해줌
+  print(n.index(1)) # 0부터 시작함으로 012 즉 2번째 자리 위치 하다는것을 표시해줌
   print(word.index("Hello")) #word 리스트 엘리멘트인 Hello 값이 몇번째인지 송출 맨처음이니 0번째가 맞다.
 
   print("Python" in word)
@@ -321,3 +324,12 @@ else:
 #Tuple 과 List 의 차이점 Tuple cannot Assignment (Can't Updating)
 #Ex. list는 j[2] = 9 형식으로 j의 2번째 값을 9로 바꾸는 기능이 있으나 튜플은 존재하지 X
 # mutable(가변) vs immutable(불변) 엘리먼트의 값을 바꿀 수 있느냐 없느냐.
+
+#중간 정리
+#List 와 Tuple은 거의 비슷하지만 List 는 mutable Tuple은 immutable인 것 같다.
+#list() = [element], tuple() = ()
+#list_Name[1] = 9 리스트 1번째 자리를 9라는 내용으로 새롭게 업데이트 시킬 수 있다. 튜플은 불가
+#Ex. tp(1, 2, 3, 4), ls[1, 2, 3, 4]
+
+
+#Dictionary 딕셔너리 dict() 와 {} 이용
