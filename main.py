@@ -230,3 +230,23 @@ for i in range(3):
     continue
   #컨티뉴 밑은 실행이 안되고 컨티뉴를 확인한 순간 다시 처음으로 돌아가 반복함.
   print("MIN! im Kanon")
+
+  #리스트 듀플 딕셔너리
+
+  #list
+  j = [1,2,3,4]
+  #    0,1,2,3
+  k = ["Kanon", "MIN"] #list()와 같은 말이다.
+  l = ["kanon", 1,2,3]
+  print(j)
+  print(k)
+  print(l)
+
+  print(j + k)
+  
+  #호출
+  print(j[0]) # j 리스트에서 0번째자리 호출 
+
+  #list 내용 변경
+  j[2] = 9
+  print(j)
