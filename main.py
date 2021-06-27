@@ -248,5 +248,43 @@ for i in range(3):
   print(j[0]) # j 리스트에서 0번째자리 호출 
 
   #list 내용 변경
-  j[2] = 9
+  j[2] = 9 # 2번째 자리의 숫자를 9로 변경
   print(j)
+
+  num_elements = len(j)# j의 사이즈 (몇개가 들어가있나를 확인가능)
+
+  print(num_elements)
+
+  # j의 내용을 정렬 sorted
+
+  n = [3,4,1,2]
+
+  Y = sorted(n)#내용을 정렬 시켜줌
+
+  print(Y)
+
+  Z = sum(n)#리스트의 숫자를 다 합친값 송출
+
+  print(Z)
+  
+  for q in n:
+    print(q) # n안의 있는 리스트 값들이 차례대로 송출 *참고로 좌에서 우 순서로 정렬되는 것 이지 숫자 높은순 낮은순이 아니다.
+
+  word = ["Hello", "Python"]
+
+  for r in word:
+    print(r)
+
+  #list 에서 한 엘리멘트가 어디에 위치하고있는지 확인
+
+  print(n.index(1)) # 0부터 시작함으로 012 즉 2번째 자리 위치 하다는것은 표시해줌
+  print(word.index("Hello")) #word 리스트 엘리멘트인 Hello 값이 몇번째인지 송출 맨처음이니 0번째가 맞다.
+
+  print("Python" in word)
+  #해당 리스트에 엘리멘트가 들어있는지 없는지 송출
+  #맞음으로 True
+
+  if "Hello" in n:
+    print("Hello 가 있습니다.") # "Hello"가 n리스트 안에 포함이 되있을 경우만 송출
+  else:
+    print("Hello가 존재하지 않습니다.") #"Hello"가 n리스트 안에 포함이 되어있지 않은 경우 송출
