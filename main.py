@@ -333,3 +333,29 @@ else:
 
 
 #Dictionary 딕셔너리 dict() 와 {} 이용
+#Dictionary 의 key 값은 가변형이 아닌 불가변형이 와야한다.
+
+x = {
+  'age':10,
+  'name': "홍길동",
+  'job':"백수",
+}
+
+print(x["age"]);
+print(x["name"]);
+
+#dictionary 또한 값을 바꿀 수 있다.
+x["age"] = 23
+print(x);
+
+#새로운 값 추가
+x["house"] = "서울"
+print(x); 
+
+#key랑 key의 값 송출 방법
+# for key in x:
+#   print("key:"+ str(key));
+#   print("value:" + str(x[key]));
+
+
+  
